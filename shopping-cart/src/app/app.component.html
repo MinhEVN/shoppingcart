@@ -1,0 +1,14 @@
+<main>
+  <app-header [totalItemsChild]="tongSoLuong"></app-header>
+
+  <!-- Cach 2
+  <app-header [totalItemsChild]="getCountProduct()"></app-header> -->
+
+  <app-body
+    [products]="products"
+    (onRemoveProduct)="removeProduct($event)"
+    (suKienThayDoiSoLuong)="xuLyKhiBatDuocSuKienThayDoiSoLuong($event)"
+  ></app-body>
+
+  <app-footer [totalMoney]="totalMoney"></app-footer>
+</main>
